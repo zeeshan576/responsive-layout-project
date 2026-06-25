@@ -1,0 +1,143 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background:#f4f4f4;
+}
+
+/* Header */
+.header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.header h1{
+    margin-bottom:10px;
+}
+
+/* Navigation - Flexbox */
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    background:#444;
+    padding:15px;
+    flex-wrap:wrap;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#ffd700;
+}
+
+/* Hero Section */
+.hero{
+    position:relative; /* Relative positioning */
+    padding:100px 20px;
+    text-align:center;
+    background:white;
+}
+
+.hero-content{
+    max-width:700px;
+    margin:auto;
+}
+
+.hero h2{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.hero p{
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#0056b3;
+}
+
+/* Absolute Positioning */
+.badge{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:red;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* Features - CSS Grid */
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    padding:40px;
+}
+
+/* Card - Box Model */
+.card{
+    background:white;
+    padding:25px;
+    margin:10px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* Footer */
+.footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:1.5rem;
+    }
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .features{
+        padding:20px;
+    }
+}
